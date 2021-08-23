@@ -108,6 +108,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .contacts .link:focus,
 .contacts .link:hover {
   color: var(--acent-color);
@@ -191,12 +192,14 @@ body {
 /* index.html */
 /* hero */
 .hero {
-  /* background-color: #2f303a; */
-
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  min-height: 600px;
   background-image: url(../img/hero.jpg);
+  background-color: rgba(47, 48, 58, 0.4);
 
   background-repeat: no-repeat;
-  background-size: 1600px 600px;
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -345,9 +348,7 @@ body {
 .cards-item:last-child {
   margin-right: 0;
 }
-.cards-img {
-  /* margin-bottom: 30px; */
-}
+
 .card-text {
   margin-top: 0;
   margin-bottom: 16px;
@@ -365,19 +366,30 @@ body {
 
 .social-networks-list {
   display: flex;
+  justify-content: center;
 }
 .conteiner-icon {
   text-align: center;
   padding-top: 12px;
   width: 44px;
   height: 44px;
-  background: rosybrown;
   border-radius: 50%;
 }
+.social-networks-item:not(:last-child) {
+  margin-right: 10px;
+}
 .social-networks-icon {
-  fill: red;
+  fill: #afb1b8;
 }
 
+.social-networks-icon:hover,
+.social-networks-icon:focus {
+  fill: var(--primary-white-color);
+}
+.conteiner-icon:hover,
+.conteiner-icon:focus {
+  background-color: var(--acent-color);
+}
 /* portfolio.html */
 
 .filter {
@@ -441,9 +453,6 @@ body {
 
 .portfolio-link {
   text-decoration: none;
-}
-.portfolio-img {
-  /* margin-bottom: 20px; */
 }
 
 .portfolio-header {

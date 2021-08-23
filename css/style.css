@@ -100,6 +100,9 @@ body {
   margin-right: 0px;
 }
 .contacts .link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   color: var(--text-color);
 
   font-weight: 500;
@@ -149,6 +152,9 @@ body {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+.footer-container {
+  display: flex;
+}
 
 .footer .logo {
   display: inline-block;
@@ -183,10 +189,29 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
+.adress {
+  margin-right: 70px;
+}
 .footer-adress .link:focus,
 .footer-adress .link:hover {
   color: var(--acent-color);
+}
+.title-footer-sn {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.conteiner-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-networks-icon.footer-icon {
+  fill: var(--primary-white-color);
 }
 
 /* index.html */
@@ -196,20 +221,19 @@ body {
   margin-right: auto;
   max-width: 1600px;
   min-height: 600px;
-  background-image: url(../img/hero.jpg);
+  /* background-image: url(../img/hero.jpg); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.1)
+    ),
+    url(../img/hero.jpg);
   background-color: rgba(47, 48, 58, 0.4);
 
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.hero::after {
-  background: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0, 4),
-    rgba(47, 48, 58, 0)
-  );
 }
 
 .hero-title {
@@ -369,8 +393,9 @@ body {
   justify-content: center;
 }
 .conteiner-icon {
-  text-align: center;
-  padding-top: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -389,6 +414,34 @@ body {
 .conteiner-icon:hover,
 .conteiner-icon:focus {
   background-color: var(--acent-color);
+}
+
+/* -----clients------ */
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  /* text-align: center;
+  padding-top: 16px; */
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+.clients-item:hover,
+.clients-icon:hover {
+  border-color: var(--acent-color);
+  fill: var(--acent-color);
 }
 /* portfolio.html */
 

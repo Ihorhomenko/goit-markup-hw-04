@@ -112,11 +112,6 @@ body {
   text-decoration: none;
 }
 
-.icon:hover,
-.icon:focus {
-  fill: var(--acent-color);
-}
-
 .contacts .link:focus,
 .contacts .link:hover {
   color: var(--acent-color);
@@ -130,10 +125,6 @@ body {
 .contacts .link:hover .icon {
   fill: var(--acent-color);
 }
-
-/* .icon:hover {
-  fill: var(--acent-color);
-} */
 
 /* logo */
 .logo {
